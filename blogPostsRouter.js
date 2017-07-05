@@ -11,7 +11,6 @@ var _require = require('./models'),
 
 // here is some data to look at when server loads
 
-
 BlogPosts.create('How to Get a Job', 'Network and know people. Tell them you want a job. Have good skills. Get your job.');
 BlogPosts.create('How to Negotiate a Salary', 'Know your worth. Have a desired salary range in mind going into negotiations.');
 
