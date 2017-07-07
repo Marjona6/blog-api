@@ -65,7 +65,7 @@ router.put('/:id', jsonParser, function (req, res) {
         title: req.body.title,
         content: req.body.content
     });
-    res.status(204).json(updatedItem);
+    res.status(200).json(updatedItem);
 });
 
 // Delete

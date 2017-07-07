@@ -20,19 +20,48 @@ app.get('/', function (req, res) {
 // route requests to the blogPostsRouter
 app.use('/blog-posts', blogPostsRouter);
 
-app.listen(process.env.PORT || 8080, function () {
+app.listen(8080, function () {
     // port displays as "undefined" when console.logged
-    console.log('Your app is listening on port ' + process.env.PORT || 8080);
+    console.log('Your app is listening on port ' + 8080);
 });
 
-// add a couple of blog posts on server load so you'll have data to look at when server starts
+var server;
 
-// GET requests to /blog-posts
+// define the runServer and closeServer functions
+//function runServer() {
+//    var port = 8080;
+//    return new Promise(function (resolve, reject) {
+//        server = app.listen(port, function () {
+//            console.log('Your app is listening on port ' + 8080);
+//            resolve(server);
+//        }).on('error', function (err) {
+//            reject(err);
+//        });
+//    });
+//}
+//
+//function closeServer() {
+//    return new Promise(function (resolve, reject) {
+//        console.log('Closing server');
+//        server.close(function (err) {
+//            if (err) {
+//                reject(err);
+//                // so we don't also call `resolve()`
+//                return;
+//            }
+//            resolve();
+//        });
+//    });
+//}
+//
+//if (require.main === module) {
+//    runServer().catch(function (err) {
+//        return console.error(err);
+//    });
+//};
 
-// POST requests to /blog-posts
-
-// DELETE requests to /blog-posts/:id
-
-// PUT requests to /blog-posts/:id
-
-// use Express router and modularize routes to /blog-posts
+module.exports = {
+    app: app
+    //    runServer: runServer,
+    //    closeServer: closeServer
+};
