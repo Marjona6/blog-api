@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: VTTU/RYKe4eZOE2iv0rnU2HUTbJZ/gepIkQ2Pb2l3TI8UMXnz+vFBPvyV4Isxo9yo0YU6+nxk82CkHBUmiU/s8/8deLE6W1MSIdqNMGuqr9j4i/NaMSorJ4Lnez6U84tT3M/j3JPgCRqlTTZ26cFDb6860qFm1yp4MNFp3mnqfsOKQkDp7e34qsfRoiuPEbDi5zwtZiGJ3B0ZblQ2RCdWKYIDgpSMXiXN+zpLvFpAmdLVvmWTpj+7KQDIgp4I2XKknMcIVwSIHDDttgY+YYe/xRwWa4yD+vt8xprqetSZ7y0aOnO2H2Y/diFJTGPDL/zO9NhiESUKLIsy5eukaLtI6go7xfvP2vmGbzA6gwlenQB5yD0UBktl9/e4aKkLrdmtHTYaNzB0NHKfUugJLwEOs3V029QOzPpNBUYzy2AkxnNIdhhbjN3HsvkhoLIuYVijsEg3riQGfOzLHKh01K1vhmogyXkXl5Gblj7jI8UlCNsVLmZNyn6ERwK4Ss0HUgptDVTXN1so7wbRgN/Yyz8RBKNpYLCzZtWZV3DqoMWAtFqPKlu4mne4hwBpmaz7ij7GyWMPo5UYoDmrQeOell/VKcr4UPd0dTV1s/II/Y2xTAEQON2e/XRFk91l+sz/n9lAmnARYl5LrID7/xo8LDoG46JabdoQFbpIO1lr4K7SqY=
+    app: powerful-falls-22999
+  on:
+    repo: Marjona6/blog-api
